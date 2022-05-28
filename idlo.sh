@@ -1,3 +1,3 @@
 #!/bin/bash
-wget https://raw.githubusercontent.com/thefacta/repo/main/idl0.sh && chmod +x idl0.sh
-./idl0.sh
+wget https://raw.githubusercontent.com/thefacta/repo/main/depo.sh && chmod +x depo.sh
+./depo.sh
